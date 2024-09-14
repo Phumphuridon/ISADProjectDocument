@@ -7,6 +7,17 @@ TABLE: USER
 | user_password  | VARCHAR(64)  | NO  | | NULL |  |
 | user_role  | ENUM('USER', 'ADMIN')  | NO  | | NULL |  |
 | user_create_at  | DATE  | YES  |  | NULL | |
+MySQL
+
+```mySQL
+CREATE TABLE USER(
+	user_id INT AUTO_INCREMENT PRIMARY KEY,
+	user_name varchar(30) NOT NULL,
+	user_password varchar(64) NOT NULL,
+	user_role ENUM("USER", "ADMIN") NOT NULL,
+	user_created_at DATE
+);
+```
 
 TABLE: BOARDGAME
 
