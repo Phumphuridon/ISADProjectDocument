@@ -26,3 +26,33 @@ TABLE: BOARDGAME
 | boardgame_name  | VARCHAR(30)  | NO  | | NULL | |
 | boardgame_max_player  | INT(11)  | NO  | | NULL |  |
 | boardgame_description  | VARCHAR(150) | YES  | | NULL |  |
+
+```MySQL
+CREATE TABLE BOARDGAME(
+	boardgame_id INT AUTO_INCREMENT PRIMARY KEY,
+	boardgame_name VARCHAR(30) NOT NULL,
+	boardgame_max_player INT NOT NULL,
+	boardgame_description VARCHAR(150)
+);
+```
+
+TABLE: LOBBY
+
+| FIELD  | TYPE | NULL | KEY  | DEFAULT | EXTRA |
+| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
+| lobby_id	 | INT(11)  | NO  | PRI  | NULL | auto_increment  |
+| boardgame_id  | INT(11)  | NO  | MUL | NULL | |
+| player_id  | INT(11)  | NO  | MUL | NULL |  |
+| lobby_created_at  | DATE | YES  | | NULL |  |
+
+```MySQL
+CREATE TABLE LOBBY(
+	lobby_id INT AUTO_INCREMENT,
+	boardgame_id int NOT NULL,
+	player_id int NOT NULL,
+	lobby_created_at DATE,
+	PRIMARY KEY (lobby_Id, boardgame_id, player_id),
+	FOREIGN KEY (boardgame_id) REFERENCES BOARDGAME(boardgame_id),
+	FOREIGN KEY (player_id) REFERENCES user(user_id)
+);
+```
