@@ -1,3 +1,8 @@
+Relation Between User <-> Lobby AND Lobby <-> Boardgame
+
+<img width="527" alt="Relations" src="https://github.com/user-attachments/assets/d3be853a-3995-4197-bedd-99d314bc4c76">
+
+
 TABLE: USER
 
 | FIELD  | TYPE | NULL | KEY  | DEFAULT | EXTRA |
