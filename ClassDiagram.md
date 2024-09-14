@@ -7,7 +7,6 @@ TABLE: USER
 | user_password  | VARCHAR(64)  | NO  | | NULL |  |
 | user_role  | ENUM('USER', 'ADMIN')  | NO  | | NULL |  |
 | user_create_at  | DATE  | YES  |  | NULL | |
-MySQL
 
 ```mySQL
 CREATE TABLE USER(
