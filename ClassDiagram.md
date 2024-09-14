@@ -41,8 +41,8 @@ TABLE: LOBBY
 | FIELD  | TYPE | NULL | KEY  | DEFAULT | EXTRA |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
 | lobby_id	 | INT(11)  | NO  | PRI  | NULL | auto_increment  |
-| boardgame_id  | INT(11)  | NO  | MUL | NULL | |
-| player_id  | INT(11)  | NO  | MUL | NULL |  |
+| boardgame_id  | INT(11)  | NO  | PRI, MUL | NULL | |
+| player_id  | INT(11)  | NO  | PRI, MUL | NULL |  |
 | lobby_created_at  | DATE | YES  | | NULL |  |
 
 ```MySQL
