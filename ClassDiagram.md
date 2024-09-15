@@ -11,7 +11,7 @@ TABLE: USER
 | user_name  | VARCHAR(30)  | NO  | | NULL | |
 | user_password  | VARCHAR(64)  | NO  | | NULL |  |
 | user_role  | ENUM('USER', 'ADMIN')  | NO  | | NULL |  |
-| user_create_at  | DATE  | YES  |  | NULL | |
+| user_create_at  | DATETIME  | YES  |  | NULL | |
 
 ```mySQL
 CREATE TABLE USER(
@@ -19,7 +19,7 @@ CREATE TABLE USER(
 	user_name varchar(30) NOT NULL,
 	user_password varchar(64) NOT NULL,
 	user_role ENUM("USER", "ADMIN") NOT NULL,
-	user_created_at DATE
+	user_created_at DATETIME
 );
 ```
 
@@ -48,16 +48,16 @@ TABLE: LOBBY
 | lobby_id	 | INT(11)  | NO  | PRI  | NULL | auto_increment  |
 | boardgame_id  | INT(11)  | NO  | PRI, MUL | NULL | |
 | player_id  | INT(11)  | NO  | PRI, MUL | NULL |  |
-| lobby_created_at  | DATE | YES  | | NULL |  |
-| lobby_ended_at  | DATE | YES  | | NULL |  |
+| lobby_created_at  | DATETIME | YES  | | NULL |  |
+| lobby_ended_at  | DATETIME | YES  | | NULL |  |
 
 ```MySQL
 CREATE TABLE LOBBY(
 	lobby_id INT AUTO_INCREMENT,
 	boardgame_id int NOT NULL,
 	player_id int NOT NULL,
-	lobby_created_at DATE,
-	lobby_ended_at DATE,
+	lobby_created_at DATETIME,
+	lobby_ended_at DATETIME,
 	PRIMARY KEY (lobby_Id, boardgame_id, player_id),
 	FOREIGN KEY (boardgame_id) REFERENCES BOARDGAME(boardgame_id),
 	FOREIGN KEY (player_id) REFERENCES user(user_id)
