@@ -48,16 +48,16 @@ TABLE: LOBBY
 | lobby_id	 | INT(11)  | NO  | PRI  | NULL | auto_increment  |
 | boardgame_id  | INT(11)  | NO  | PRI, MUL | NULL | |
 | player_id  | INT(11)  | NO  | PRI, MUL | NULL |  |
-| lobby_created_at  | DATETIME | YES  | | NULL |  |
-| lobby_ended_at  | DATETIME | YES  | | NULL |  |
+| lobby_created_at  | DATETIME | NO  | | NULL |  |
+| lobby_ended_at  | DATETIME | NO  | | NULL |  |
 
 ```MySQL
 CREATE TABLE LOBBY(
 	lobby_id INT AUTO_INCREMENT,
 	boardgame_id int NOT NULL,
 	player_id int NOT NULL,
-	lobby_created_at DATETIME,
-	lobby_ended_at DATETIME,
+	lobby_created_at DATETIME NOT NULL,
+	lobby_ended_at DATETIME NOT NULL,
 	PRIMARY KEY (lobby_Id, boardgame_id, player_id),
 	FOREIGN KEY (boardgame_id) REFERENCES BOARDGAME(boardgame_id),
 	FOREIGN KEY (player_id) REFERENCES user(user_id)
