@@ -49,6 +49,7 @@ TABLE: LOBBY
 | boardgame_id  | INT(11)  | NO  | PRI, MUL | NULL | |
 | player_id  | INT(11)  | NO  | PRI, MUL | NULL |  |
 | lobby_created_at  | DATE | YES  | | NULL |  |
+| lobby_ended_at  | DATE | YES  | | NULL |  |
 
 ```MySQL
 CREATE TABLE LOBBY(
@@ -56,6 +57,7 @@ CREATE TABLE LOBBY(
 	boardgame_id int NOT NULL,
 	player_id int NOT NULL,
 	lobby_created_at DATE,
+	lobby_ended_at DATE,
 	PRIMARY KEY (lobby_Id, boardgame_id, player_id),
 	FOREIGN KEY (boardgame_id) REFERENCES BOARDGAME(boardgame_id),
 	FOREIGN KEY (player_id) REFERENCES user(user_id)
