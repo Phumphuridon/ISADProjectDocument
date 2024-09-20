@@ -21,8 +21,8 @@ CREATE TABLE PLAYERLOBBY(
 
 ## Related Entities
 
-| Entity | Cardinality | Reference To | Relationship |
+| Entity | Cardinality | Reference Name | Relationship |
 |-----|-----|-----|-----|
-| [Lobby](/Lobby.md) | 1 | [Lobby](/Lobby.md)::lobby_id | (Lobby—PlayerLobby) |
+| [Lobby](/Lobby.md) | 1 |  | (Lobby—PlayerLobby) |
 | [User](/User.md) | 1 |  | (User—PlayerLobby) |
 
