@@ -1,5 +1,5 @@
 # User
-[```ERDDiagram```](/ERDDiagram.md)::[```User```](/User.md) [```ERDDiagram```](/ERDDiagram.md)::[```PlayerLobby```](/PlayerLobby.md)
+[```ERDDiagram```](/ERDDiagram.md)::[```User```](/User.md)
 
 ## Table
 
