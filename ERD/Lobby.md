@@ -1,5 +1,5 @@
 # Lobby
-[```ERDDiagram```](/ERDDiagram.md)::[```User```](/Lobby.md)
+[```ERDDiagram```](/ERD/ERDDiagram.md)::[```Lobby```](/ERD/Lobby.md)
 
 ## Table
 
@@ -22,6 +22,6 @@ CREATE TABLE LOBBY(
 
 | Entity | Cardinality | Reference Name | Relationship |
 |-----|-----|-----|-----|
-| [PlayerLobby](/PlayerLobby.md) | 0..* |  | (Lobby—PlayerLobby) |
+| [PlayerLobby](/ERD/PlayerLobby.md) | 0..* |  | (Lobby—PlayerLobby) |
 | [Boardgame](/Boardgame.md) | 1 |  | (Lobby—Boardgame) |
 
