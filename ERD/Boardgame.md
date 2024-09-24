@@ -1,5 +1,5 @@
 # Boardgame
-[```ERDDiagram```](/ERD/ERDDiagram.md)::[```Boardgame```](/Boardgame.md)
+[```ERDDiagram```](/ERD/ERDDiagram.md)::[```Boardgame```](/ERD/Boardgame.md)
 
 ## Table
 
@@ -30,6 +30,6 @@ CREATE TABLE BOARDGAME(
 
 | Entity | Cardinality | Reference Name | Relationship |
 |-----|-----|-----|-----|
-| [Lobby](/Lobby.md) | 0..1 |  | (Lobby—Boardgame) |
-| [ImageSet](/ImageSet.md) | 1 |  | (Boardgame—ImageSet) |
+| [Lobby](/ERD/Lobby.md) | 0..1 |  | (Lobby—Boardgame) |
+| [ImageSet](/ERD/ImageSet.md) | 1 |  | (Boardgame—ImageSet) |
 
