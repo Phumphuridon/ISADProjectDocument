@@ -1,5 +1,5 @@
 # Boardgame
-[```ERDDiagram```](/ERDDiagram.md)::[```Boardgame```](/Boardgame.md)
+[```ERDDiagram```](/ERD/ERDDiagram.md)::[```Boardgame```](/Boardgame.md)
 
 ## Table
 
