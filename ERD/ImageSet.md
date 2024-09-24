@@ -1,5 +1,5 @@
 # ImageSet
-[```ERDDiagram```](/ERDDiagram.md)::[```ImageSet```](/ImageSet.md)
+[```ERDDiagram```](/ERD/ERDDiagram.md)::[```ImageSet```](/ERD/ImageSet.md)
 
 ## Table
 
@@ -28,5 +28,5 @@ CREATE TABLE IMAGESET(
 
 | Entity | Cardinality | Reference Name | Relationship |
 |-----|-----|-----|-----|
-| [Boardgame](/Boardgame.md) | 0..1 |  |   (Boardgame—ImageSet) |
+| [Boardgame](/ERD/Boardgame.md) | 0..1 |  |   (Boardgame—ImageSet) |
 
