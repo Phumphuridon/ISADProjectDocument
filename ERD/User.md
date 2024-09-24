@@ -1,5 +1,5 @@
 # User
-[```ERDDiagram```](/ERDDiagram.md)::[```User```](/User.md)
+[```ERDDiagram```](/ERD/ERDDiagram.md)::[```User```](/ERD/User.md)
 
 ## Table
 
@@ -26,5 +26,5 @@ CREATE TABLE USER(
 
 | Entity | Cardinality | Reference Name | Relationship |
 |-----|-----|-----|-----|
-| [PlayerLobby](/PlayerLobby.md) | 0..1 |  |   (User—PlayerLobby) |
+| [PlayerLobby](/ERD/PlayerLobby.md) | 0..1 |  |   (User—PlayerLobby) |
 
