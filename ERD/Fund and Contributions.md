@@ -6,6 +6,7 @@
 | Description   | varchar(3500) | YES   |     | NULL    |                 |
 | goal_amount   | int(11)       | NO    |     | NULL    |                 |
 | raised_amount | int(11)       | NO    |     | 0       |                 |
+| imageset_id   | int(11)       | NO    | MUL | NULL    |                 |
 
 "ตาราง Contributions"
 | FIELD           | TYPE          | NULL  | KEY | Default |
