@@ -6,7 +6,7 @@
 | Field | Type | Null | Key | Default | Extra |
 |-----|-----|-----|-----|-----|-----|
 | user_id | int(11) | NO | PRI | NULL | auto_increment |
-| user_name | varchar(30) | NO |  | NULL |  |
+| user_name | varchar(30) | NO | UNI | NULL |  |
 | user_password | char(64) | NO |  | NULL |  |
 | user_profile | mediumblob | YES |  | NULL |  |
 
@@ -14,7 +14,7 @@
 ```MySQL
 CREATE TABLE USER(
 	user_id INT(11) AUTO_INCREMENT PRIMARY KEY,
-	user_name VARCHAR(30) NOT NULL,
+	user_name VARCHAR(30) UNIQUE NOT NULL,
 	user_password char(64) NOT NULL,
 	user_profile MEDIUMBLOB
 );
