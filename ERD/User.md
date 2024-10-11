@@ -25,4 +25,6 @@ CREATE TABLE USER(
 | Entity | Cardinality | Reference Name | Relationship |
 |-----|-----|-----|-----|
 | [PlayerLobby](/ERD/PlayerLobby.md) | 0..1 |  |   (User—PlayerLobby) |
+| [Contributions](/ERD/Contributions.md) | 0..1 |  |   (User—Contributions) |
+
 
