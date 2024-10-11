@@ -23,5 +23,5 @@ CREATE TABLE LOBBY(
 | Entity | Cardinality | Reference Name | Relationship |
 |-----|-----|-----|-----|
 | [PlayerLobby](/ERD/PlayerLobby.md) | 0..* |  | (Lobby—PlayerLobby) |
-| [Boardgame](/Boardgame.md) | 1 |  | (Lobby—Boardgame) |
+| [Boardgame](/ERD/Boardgame.md) | 1 |  | (Lobby—Boardgame) |
 
