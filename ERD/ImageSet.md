@@ -28,5 +28,5 @@ CREATE TABLE IMAGESET(
 
 | Entity | Cardinality | Reference Name | Relationship |
 |-----|-----|-----|-----|
-| [Boardgame](/ERD/Boardgame.md) | 0..1 |  |   (Boardgame—ImageSet) |
-
+| [Boardgame](/ERD/Boardgame.md) | 1 |  |   (Boardgame—ImageSet) |
+| [Fund](/ERD/Fund.md) | 1 |  |   (Fund—ImageSet) |
