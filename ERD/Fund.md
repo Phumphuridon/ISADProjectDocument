@@ -1,5 +1,5 @@
 # User
-[```ERDDiagram```](/ERD/ERDDiagram.md)::[```User```](/ERD/Fund.md)
+[```ERDDiagram```](/ERD/ERDDiagram.md)::[```Fund```](/ERD/Fund.md)
 
 ## Table
 
