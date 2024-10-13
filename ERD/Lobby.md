@@ -14,7 +14,7 @@
 ```MySQL
 CREATE TABLE LOBBY(
 	lobby_id INT(11) AUTO_INCREMENT PRIMARY KEY,
-	lobby_description VARCHAR(150),
+	lobby_description VARCHAR(255),
 	lobby_created_at DATETIME NOT NULL,
 	lobby_ended_at DATETIME NOT NULL
 );
