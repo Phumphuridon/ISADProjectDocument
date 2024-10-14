@@ -1,7 +1,7 @@
 # ERDDiagram
 [```User```](/ERD/User.md)
 [```Lobby```](/ERD/Lobby.md)
-[```PlayerLobby```](/ERD/PlayerLobby.md)
+-[```PlayerLobby```](/ERD/PlayerLobby.md)-
 [```ImageSet```](/ERD/ImageSet.md)
 [```Boardgame```](/ERD/Boardgame.md)
 [```Fund```](/ERD/Fund.md)
