@@ -1,4 +1,6 @@
-# PlayerLobby
+# Deprecated
+
+## PlayerLobby
 [```ERDDiagram```](/ERD/ERDDiagram.md)::[```PlayerLobby```](/ERD/PlayerLobby.md)
 
 ## Table
